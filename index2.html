@@ -3,6 +3,7 @@
         <body>
             <script>
                 var  xhr = new XMLHttpRequest()
+                xhr.open("GET",true);
                 var opject1 ={name: "person 1", age:5}
                 var opject2 ={age:5,name:"person 1"}
                 xhr.onload = function(){
