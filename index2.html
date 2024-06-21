@@ -2,10 +2,9 @@
     <head>
         <body>
             <script>
-                var  xhr = new XMLHttpRequest()
-                xhr.open("GET",true);
+                var  xhr = new XMLHttpRequest();
                 var opject1 ={name: "person 1", age:5}
-                var opject2 ={age:5,name:"person 1"}
+                var opject2 ={age:5,name:"person 1"} 
                 xhr.onload = function(){
                     if(JSON.stringfy(Object1) === JSON.stringify(Object2)){
                   console.log(_.isEqual(Object1,opject2));
@@ -13,7 +12,6 @@
                     console.log(" the rqueat failed")
                 }
                 };
-                xhr.send();
             </script>
                 
             
