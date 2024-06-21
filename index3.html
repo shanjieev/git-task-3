@@ -2,7 +2,7 @@
     <head>
         <body>
             <script>
-                var request = new XMLHttpRequest();
+                var xhr = new XMLHttpRequest();
                 request.open("GET","https://restcountries.com/v2/all");
                 request.onload=function(){
                     var result=JSON.parse(request.response);
