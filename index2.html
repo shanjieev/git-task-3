@@ -2,10 +2,16 @@
     <head>
         <body>
             <script>
-                var opject1 ={name: "person 1", age:5};
-                var opject2 ={age:5,name:"person 1"};
-                 (JSON.stringfy(Object1) === JSON.stringify(Object2));
-                  console.log(_.isEqual(Object1,opject2))
+                var  xhr = new XMLHttpRequest()
+                var opject1 ={name: "person 1", age:5}
+                var opject2 ={age:5,name:"person 1"}
+                xhr.onload = function(){
+                    if(JSON.stringfy(Object1) === JSON.stringify(Object2)){
+                  console.log(_.isEqual(Object1,opject2));
+                } else {
+                    console.log(" the rqueat failed")
+                }
+                }
             </script>
                 
             
