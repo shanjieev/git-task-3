@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <body>
+            <script>
+               var  xhr = new XMLHttpRequest();
+               xhr.open("GET","https://restcountries.com/v3.1/all",true);
+               xhr.onload = function(){
+                if (xhr.status >=200 && xhr.status < 300){
+                    var response = JSON.parse(xhr.responseText);
+                    console.log(response)
+                } else {
+                    console.log("the request failed")
+                }
+            };
+            xhr.send();
+            </script>
+        </body>
+    </head>
+</html>
